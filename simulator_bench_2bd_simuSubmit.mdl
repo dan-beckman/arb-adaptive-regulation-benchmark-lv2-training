@@ -1,13 +1,13 @@
 Model {
   Name			  "simulator_bench_2bd_simuSubmit"
   Version		  10.2
-  SavedCharacterEncoding  "UTF-8"
+  SavedCharacterEncoding  "windows-1252"
   ModelUUID		  "e867e858-97b7-4983-b16f-bcbe19e85bbe"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "23.18"
+    ComputedModelVersion    "23.22"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -54,17 +54,20 @@ Model {
     OrderedModelArguments   1
   }
   LogicAnalyzerPlugin	  "on"
+  WebScopes_FoundationPlugin "on"
   SLCCPlugin		  "on"
+  slcheck_filter_plugin	  "on"
+  AnimationPlugin	  "on"
   DiagnosticSuppressor	  "on"
   SuppressorTable	  "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n<!DOCTYPE boost_serialization>\n<"
   "boost_serialization signature=\"serialization::archive\" version=\"17\">\n<DiagnosticSuppressor class_id=\"0\" track"
   "ing_level=\"0\" version=\"6\">\n	<Table class_id=\"1\" tracking_level=\"0\" version=\"0\">\n		<count>1</count>\n		<b"
-  "ucket_count>2</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
+  "ucket_count>8</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
   "\"0\">\n			<first class_id=\"3\" tracking_level=\"0\" version=\"6\">\n				<Source class_id=\"4\" tracking_level=\"0\""
   " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>simulator_bench_2bd_simuSubm"
   "it/Plant/    /Repeating Sequence Stair/LimitedCounter</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" "
   "tracking_level=\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<c"
-  "ount>2</count>\n					<bucket_count>2</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" "
+  "ount>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" "
   "tracking_level=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>Sim"
   "ulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<i"
   "tem_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" track"
@@ -84,9 +87,6 @@ Model {
   "onal_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n"
   "						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n\n"
   "</boost_serialization>\n\n</boost_serialization>\n\n"
-  AnimationPlugin	  "on"
-  slcheck_filter_plugin	  "on"
-  WebScopes_FoundationPlugin "on"
   NotesPlugin		  "on"
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
@@ -98,7 +98,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "maci64"
+  LastSavedArchitecture	  "win64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -136,10 +136,10 @@ Model {
 	    IsTabbed		    [1]
 	    ViewObjType		    "SimulinkSubsys"
 	    LoadSaveID		    "777"
-	    Extents		    [1278.0, 608.0]
-	    ZoomFactor		    [0.8]
-	    Offset		    [-329.73828125, -80.250000000000227]
-	    SceneRectInView	    [-329.73828125, -80.250000000000227, 1597.5, 760.0]
+	    Extents		    [1582.0, 761.0]
+	    ZoomFactor		    [0.79223787167449133]
+	    Offset		    [-329.73828125, -84.478034134007828]
+	    SceneRectInView	    [-329.73828125, -84.478034134007828, 1597.5000000000002, 768.4560682680152]
 	  }
 	  Object {
 	    $ObjectID		    6
@@ -170,19 +170,6 @@ Model {
 	  Dimension		  2
 	  Object {
 	    $ObjectID		    8
-	    Type		    "GLUE2:PropertyInspector"
-	    ID			    "Property Inspector"
-	    Visible		    [0]
-	    CreateCallback	    ""
-	    UserData		    ""
-	    Floating		    [0]
-	    DockPosition	    "Right"
-	    Width		    [640]
-	    Height		    [480]
-	    Minimized		    "Unset"
-	  }
-	  Object {
-	    $ObjectID		    9
 	    Type		    "Simulink:Editor:ReferencedFiles"
 	    ID			    "Referenced Files"
 	    Visible		    [0]
@@ -190,18 +177,31 @@ Model {
 	    UserData		    "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
 	    Floating		    [0]
 	    DockPosition	    "Left"
-	    Width		    [640]
-	    Height		    [480]
+	    Width		    [512]
+	    Height		    [384]
+	    Minimized		    "Unset"
+	  }
+	  Object {
+	    $ObjectID		    9
+	    Type		    "GLUE2:PropertyInspector"
+	    ID			    "Property Inspector"
+	    Visible		    [0]
+	    CreateCallback	    ""
+	    UserData		    ""
+	    Floating		    [0]
+	    DockPosition	    "Right"
+	    Width		    [512]
+	    Height		    [384]
 	    Minimized		    "Unset"
 	  }
 	  PropName		  "DockComponentsInfo"
 	}
 	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
 	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
-	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpA"
-	"HQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjwD///"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpA"
+	"HQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///"
 	"8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHk"
-	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAFJAAAAp0AAAABAAAAAgAAAAEAAAAC/AAAAAA="
+	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////AAAGWwAAAz8AAAABAAAAAgAAAAEAAAAC/AAAAAA="
 	Array {
 	  Type			  "Cell"
 	  Dimension		  0
@@ -212,7 +212,7 @@ Model {
       Object {
 	$ObjectID		10
 	IsActive		[1]
-	Location		[0.0, 0.0, 1920.0, 1080.0]
+	Location		[0.0, 0.0, 1554.0, 882.0]
 	Object {
 	  $PropName		  "ModelBrowserInfo"
 	  $ObjectID		  11
@@ -239,10 +239,10 @@ Model {
 	    IsTabbed		    [1]
 	    ViewObjType		    "SimulinkSubsys"
 	    LoadSaveID		    "777"
-	    Extents		    [1882.0, 845.0]
-	    ZoomFactor		    [1.111842105263158]
-	    Offset		    [-377.33147651627212, -80.250000000000227]
-	    SceneRectInView	    [-377.33147651627212, -80.250000000000227, 1692.6863905325442, 760.0]
+	    Extents		    [1879.0, 809.0]
+	    ZoomFactor		    [0.8515789473684211]
+	    Offset		    [-413.58407853059327, -80.250000000000227]
+	    SceneRectInView	    [-413.58407853059327, -80.250000000000227, 1765.1915945611863, 759.99999999999989]
 	  }
 	  Object {
 	    $ObjectID		    14
@@ -302,8 +302,8 @@ Model {
 	    UserData		    ""
 	    Floating		    [0]
 	    DockPosition	    "Right"
-	    Width		    [640]
-	    Height		    [480]
+	    Width		    [512]
+	    Height		    [384]
 	    Minimized		    "Unset"
 	  }
 	  Object {
@@ -315,18 +315,18 @@ Model {
 	    UserData		    "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
 	    Floating		    [0]
 	    DockPosition	    "Left"
-	    Width		    [640]
-	    Height		    [480]
+	    Width		    [512]
+	    Height		    [384]
 	    Minimized		    "Unset"
 	  }
 	  PropName		  "DockComponentsInfo"
 	}
 	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
 	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
-	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpA"
-	"HQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjwD///"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpA"
+	"HQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///"
 	"8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHk"
-	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAHgAAAA4oAAAABAAAAAgAAAAEAAAAC/AAAAAA="
+	"AIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAhYA////AAAHhAAAA28AAAABAAAAAgAAAAEAAAAC/AAAAAA="
 	Array {
 	  Type			  "Cell"
 	  Dimension		  0
@@ -345,11 +345,11 @@ Model {
   Creator		  "manip07"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "xuchen"
+  LastModifiedBy	  "danbe"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue May 24 21:16:21 2022"
-  RTWModifiedTimeStamp	  575327730
-  ModelVersionFormat	  "%<AutoIncrement:23.18>"
+  LastModifiedDate	  "Fri Jun 10 21:43:43 2022"
+  RTWModifiedTimeStamp	  576798149
+  ModelVersionFormat	  "%<AutoIncrement:23.22>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -2513,7 +2513,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "dist. ID"
-	    Location		    [0, 0, 1920, 1080]
+	    Location		    [0, 0, 1554, 882]
 	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
@@ -2529,7 +2529,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "111"
+	    ZoomFactor		    "85"
 	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
@@ -8390,54 +8390,61 @@ Stateflow {
       " iter_jump = 0;\n    flag_jump_pre = 0;\n    flag_jump_prePre = 0;\n    theta_pre = theta;\n    theta_pre_n = 2;"
       "\nend\nif SW == 0\n    %========= Adaptation turned off. ==========\n    % update observation vector\n    x(2:4)"
       "   = x(1:4-1);\n    x(1)     = xk;\n    \n    para_est = theta;\n    f_factor = lambda;\n    alpha_rt = alpha;\n"
-      "    SW_NF98 = 1;\nelse\n    if flag_series_parallel\n        %% read data\n        phi     = TBD;\n        % a p"
-      "riori estimate\n        x_hat = TBD;\n        % a priori estimation error\n        e = xk - x_hat;\n        phi_"
-      "F_phi = phi'*F*phi;\n        % adaptation gain update\n        F = 1/lambda * ( F - F*(phi*phi')*F / (lambda+phi"
-      "_F_phi) );\n        delta_theta = TBD;\n        % parameter estimation update\n        theta = theta + delta_the"
-      "ta;\n        % a posteriori prediction\n        x_hat_post = TBD;\n        if SW_lambda == 0 || SW_lambda == 2\n"
-      "            if SW_2Stage == 0\n                %         alpha = alpha_init;\n                if SW_lambda == 0\n"
-      "                    lambda = lambda_end -...\n                        (lambda_end-lambda) * 0.996;\n            "
-      "        alpha = alpha_end - (alpha_end-alpha) * 0.99;\n                elseif SW_lambda == 2\n                  "
-      "  if iter < 100\n                        lambda = lambda_end -...\n                            (lambda_end-lambd"
-      "a) * 0.996;\n                    else\n                        lambda = 1-( 1-phi'*F*phi/(1+phi_F_phi) )*...\n  "
-      "                          (xk-x_hat_post)^2*5e6;%/0.00000018;%0125 000030\n                        if lambda < 0"
-      ".5\n                            lambda = 0.5;\n                            alpha = alpha_init; % alpha adap\n   "
-      "                     end\n                    end\n                    alpha = alpha_end - (alpha_end-alpha) * 0"
-      ".99;\n                end\n            else\n                lambda = lambda_end -...\n                    (lamb"
-      "da_end-lambda) * 0.996;\n                alpha = alpha_end - (alpha_end-alpha) * 0.99;\n            end\n       "
-      " end\n        % +++++++++++++++++++++++++++++++++++++++++++\n        % filter state update        \n        x(2:"
-      "4)      = x(1:4-1);\n        x(1)        = xk;\n        \n        switch_iter_track = iter;\n        count1stage"
-      "       = count1stage + 1;\n        if SW_2Stage\n            if (SW_lambda == 2) || (SW_lambda == 0)\n          "
-      "      if 1\n                    if count1stage > 200\n                        flag_series_parallel    = 0;\n    "
-      "                end\n                end\n            end\n        end\n    else        %         SW_2Stage == 1"
-      " and algorithm converged\n        if iter == switch_iter_track + 1 % initialize for the local algorithm\n       "
-      "     lambda2 = 0.99;\n            alpha2 = 0.97;\n            e_post = [0;0;0;0];\n            theta_pre = theta"
-      ";\n            theta_pre_n = ceil(switch_iter_track/100)+5;\n            lambda_temp = 1;\n        end\n        "
-      "\n        fxd_comp    = theta;\n        % regressor update\n        phi = TBD;\n        % a priori prediction er"
-      "ror\n        e   = TBD;\n        % a priori adaptation error\n        v   = TBD;\n        phi_F_phi = phi'*F*phi"
-      ";\n        F = 1/lambda2 * ( F - F*(phi*phi')*F / (lambda2+phi_F_phi) );\n        % parameter estimation update\n"
-      "        theta = theta + TBD;\n        % a posteriori prediction\n        ek_post = TBD;\n        x_hat_post = xk"
-      " - ek_post;\n        if flag_judge_alg \n            lambda2 = lambda_temp - (lambda_temp-lambda2) * 0.996;%0.98"
-      ";\n        end\n        % ////////\n        if iter==(theta_pre_n*100)\n            theta_pre(2) = theta_pre(1);"
-      "\n            theta_pre(1) = ek_post;%theta(1);\n            theta_pre_n = theta_pre_n + 1;\n        end\n      "
-      "  if iter > 500\n                if abs(xk-x_hat_post)>0.03\n                    flag_jump = 1;\n               "
-      " end\n                if flag_jump_pre == 0 && flag_jump == 1\n                    iter_jump = iter;\n          "
-      "              lambda2 = 0.95;\n                        lambda_temp = 0.999;\n                        flag_judge_"
-      "alg = 1;\n                    if flag_jump_prePre == 1 % if i had just jumped\n                        lambda2 ="
-      " 0.993;\n                        lambda_temp = 0.999;\n                        flag_judge_alg = 0;\n            "
-      "        end\n                    flag_jump_pre = 1;\n                    flag_jump_prePre = 1;\n                "
-      "end\n                if iter-iter_jump > 120\n                    flag_jump_prePre = 0;\n                elseif "
-      "iter-iter_jump > 60\n                    flag_jump_pre = 0;\n                    flag_jump = 0;\n               "
-      " end\n        else\n%             lambda_temp = 0.99;\n        end\n        % ////////\n        alpha2 = 0.996 -"
-      " (0.996-alpha2) * 0.97;\n        if SW_lambda == 2\n            if (iter == 3*800+0) || ...\n                   "
-      " (iter == 6*800+0) || ...\n                    (iter == 9*800+0) || ...\n                    (iter == 12*800+0)\n"
-      "                flag_series_parallel = 1;\n                lambda = lambda_init-0.02;\n%                 F = [1 "
-      "0;0 1]*500;\n                count1stage = 0;\n            end\n        elseif SW_lambda == 3\n            if (i"
-      "ter == 5*800-1) || ...\n                    (iter == 14*800-1)\n                flag_series_parallel = 1;\n     "
-      "           lambda = 0.991;\n            end\n        end\n        % TBD\n        % Update states vectors x and e"
-      "_post\n    end\n    \n    iter = iter + 1; % iteration update\n    para_est = theta;\n    f_factor = lambda2; \n"
-      "    end\n    alpha_rt = alpha;\n    if 1 %abs(theta)<1.5609 %2*cos(2*pi/800*86)%1.5208% 2*cos(2*pi/800*90)\n    "
-      "    SW_NF98 = 1;\n    else\n        SW_NF98 = 0;\n    end\nend\n"
+      "    SW_NF98 = 1;\nelse\n    if flag_series_parallel\n        %% read data\n%         phi     = TBD;\n        phi"
+      "     = [x(1) + x(3); x(2)]; \n        % a priori estimate\n%         x_hat = TBD;\n        x_hat = -phi'*theta -"
+      " x(4);\n        % a priori estimation error\n        e = xk - x_hat;\n        phi_F_phi = phi'*F*phi;\n        %"
+      " adaptation gain update\n        F = 1/lambda * ( F - F*(phi*phi')*F / (lambda+phi_F_phi) );\n%         delta_th"
+      "eta = TBD;\n        delta_theta = -(F*phi*e/(lambda+phi_F_phi));\n        % parameter estimation update\n       "
+      " theta = theta + delta_theta;\n        % a posteriori prediction\n%         x_hat_post = TBD;\n        x_hat_pos"
+      "t = -phi'*theta - x(4);\n        if SW_lambda == 0 || SW_lambda == 2\n            if SW_2Stage == 0\n           "
+      "     %         alpha = alpha_init;\n                if SW_lambda == 0\n                    lambda = lambda_end -"
+      "...\n                        (lambda_end-lambda) * 0.996;\n                    alpha = alpha_end - (alpha_end-al"
+      "pha) * 0.99;\n                elseif SW_lambda == 2\n                    if iter < 100\n                        "
+      "lambda = lambda_end -...\n                            (lambda_end-lambda) * 0.996;\n                    else\n  "
+      "                      lambda = 1-( 1-phi'*F*phi/(1+phi_F_phi) )*...\n                            (xk-x_hat_post)"
+      "^2*5e6;%/0.00000018;%0125 000030\n                        if lambda < 0.5\n                            lambda = "
+      "0.5;\n                            alpha = alpha_init; % alpha adap\n                        end\n               "
+      "     end\n                    alpha = alpha_end - (alpha_end-alpha) * 0.99;\n                end\n            el"
+      "se\n                lambda = lambda_end -...\n                    (lambda_end-lambda) * 0.996;\n                "
+      "alpha = alpha_end - (alpha_end-alpha) * 0.99;\n            end\n        end\n        % +++++++++++++++++++++++++"
+      "++++++++++++++++++\n        % filter state update        \n        x(2:4)      = x(1:4-1);\n        x(1)        "
+      "= xk;\n        \n        switch_iter_track = iter;\n        count1stage       = count1stage + 1;\n        if SW_"
+      "2Stage\n            if (SW_lambda == 2) || (SW_lambda == 0)\n                if 1\n                    if count1"
+      "stage > 200\n                        flag_series_parallel    = 0;\n                    end\n                end\n"
+      "            end\n        end\n    else        %         SW_2Stage == 1 and algorithm converged\n        if iter "
+      "== switch_iter_track + 1 % initialize for the local algorithm\n            lambda2 = 0.99;\n            alpha2 ="
+      " 0.97;\n            e_post = [0;0;0;0];\n            theta_pre = theta;\n            theta_pre_n = ceil(switch_i"
+      "ter_track/100)+5;\n            lambda_temp = 1;\n        end\n        \n        fxd_comp    = theta;\n        % "
+      "regressor update\n%         phi = TBD;\n        phi = [x(1) + x(3) - alpha2*(e_post(1) + alpha2^2*e_post(3));\n "
+      "              x(2) - alpha2^2*e_post(2)];\n        % a priori prediction error\n%         e   = TBD;\n        e "
+      "= xk + phi'*theta + x(4) - alpha2^4*e_post(4);\n        % a priori adaptation error\n%         v   = TBD;\n     "
+      "   v = e + fxd_comp(1)*alpha2*(e_post(1) + alpha2^2*e_post(3)) + ...\n            fxd_comp(2)*alpha2^2*e_post(2)"
+      " + alpha2^4*e_post(4);\n        phi_F_phi = phi'*F*phi;\n        F = 1/lambda2 * ( F - F*(phi*phi')*F / (lambda2"
+      "+phi_F_phi) );\n        % parameter estimation update\n%         theta = theta + TBD;\n        theta = theta - ("
+      "F*phi*v/(lambda2+phi_F_phi));\n        % a posteriori prediction\n%         ek_post = TBD;\n        ek_post = xk"
+      " + phi'*theta + x(4) - alpha2^4*e_post(4);\n        x_hat_post = xk - ek_post;\n        if flag_judge_alg \n    "
+      "        lambda2 = lambda_temp - (lambda_temp-lambda2) * 0.996;%0.98;\n        end\n        % ////////\n        i"
+      "f iter==(theta_pre_n*100)\n            theta_pre(2) = theta_pre(1);\n            theta_pre(1) = ek_post;%theta(1"
+      ");\n            theta_pre_n = theta_pre_n + 1;\n        end\n        if iter > 500\n                if abs(xk-x_"
+      "hat_post)>0.03\n                    flag_jump = 1;\n                end\n                if flag_jump_pre == 0 &"
+      "& flag_jump == 1\n                    iter_jump = iter;\n                        lambda2 = 0.95;\n              "
+      "          lambda_temp = 0.999;\n                        flag_judge_alg = 1;\n                    if flag_jump_pr"
+      "ePre == 1 % if i had just jumped\n                        lambda2 = 0.993;\n                        lambda_temp "
+      "= 0.999;\n                        flag_judge_alg = 0;\n                    end\n                    flag_jump_pr"
+      "e = 1;\n                    flag_jump_prePre = 1;\n                end\n                if iter-iter_jump > 120\n"
+      "                    flag_jump_prePre = 0;\n                elseif iter-iter_jump > 60\n                    flag_"
+      "jump_pre = 0;\n                    flag_jump = 0;\n                end\n        else\n%             lambda_temp "
+      "= 0.99;\n        end\n        % ////////\n        alpha2 = 0.996 - (0.996-alpha2) * 0.97;\n        if SW_lambda "
+      "== 2\n            if (iter == 3*800+0) || ...\n                    (iter == 6*800+0) || ...\n                   "
+      " (iter == 9*800+0) || ...\n                    (iter == 12*800+0)\n                flag_series_parallel = 1;\n  "
+      "              lambda = lambda_init-0.02;\n%                 F = [1 0;0 1]*500;\n                count1stage = 0;"
+      "\n            end\n        elseif SW_lambda == 3\n            if (iter == 5*800-1) || ...\n                    ("
+      "iter == 14*800-1)\n                flag_series_parallel = 1;\n                lambda = 0.991;\n            end\n"
+      "        end\n        % TBD\n        % Update states vectors x and e_post\n        x(2:4) = x(1:3);\n        x(1)"
+      " = xk;\n        e_post(2:4) = e_post(1:3);\n        e_post(1) = ek_post;\n    end\n    \n    iter = iter + 1; % "
+      "iteration update\n    para_est = theta;\n    f_factor = lambda2; \n    end\n    alpha_rt = alpha;\n    if 1 %abs"
+      "(theta)<1.5609 %2*cos(2*pi/800*86)%1.5208% 2*cos(2*pi/800*90)\n        SW_NF98 = 1;\n    else\n        SW_NF98 ="
+      " 0;\n    end\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
       fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
       "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
