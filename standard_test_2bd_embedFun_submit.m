@@ -41,16 +41,17 @@ distID.THRESHOLD = 5e-3;
 %       FLAG_DIST_FREQ = 0 ------ step changing disturbance frequency
 %       FLAG_DIST_FREQ = 1 ------ constant disturbance frequency
 %       FLAG_DIST_FREQ = 2 ------ chirp disturbance
-disp('=============Multiple Narrow Band Disturbance Rejection============')
-disp('===================================================================')
-disp('SELECT TEST OPTIONS:')
-disp('0 (default) ---- step changing disturbance frequency')
-disp('1           ---- constant disturbance frequency')
-disp('2           ---- chirp disturbance')
-disp('   ')
-disp('Press ENTER for default selection.')
+% disp('=============Multiple Narrow Band Disturbance Rejection============')
+% disp('===================================================================')
+% disp('SELECT TEST OPTIONS:')
+% disp('0 (default) ---- step changing disturbance frequency')
+% disp('1           ---- constant disturbance frequency')
+% disp('2           ---- chirp disturbance')
+% disp('   ')
+% disp('Press ENTER for default selection.')
 while 1
-    FLAG_DIST_FREQ = input(':');
+%     FLAG_DIST_FREQ = input(':');
+    FLAG_DIST_FREQ = 2;
     if isempty(FLAG_DIST_FREQ)
         FLAG_DIST_FREQ      = 0;
     end
@@ -65,14 +66,15 @@ if ~exist('FLAG_DIST_FREQ','var')
     FLAG_DIST_FREQ = FLAG_STEP_CHANGE_DIST_FREQ;
 end
 
-disp('===================================================================')
-disp('CHOOSE THE TEST LENGTH:')
-disp('1 (default) ---- a quick sample test')
-disp('0           ---- the entire frequency profile specified by the benchmark')
-disp('   ')
-disp('Press ENTER for default selection.')
+% disp('===================================================================')
+% disp('CHOOSE THE TEST LENGTH:')
+% disp('1 (default) ---- a quick sample test')
+% disp('0           ---- the entire frequency profile specified by the benchmark')
+% disp('   ')
+% disp('Press ENTER for default selection.')
 while 1
-    SW_ONE_SIMU_TEST = input(':');
+%     SW_ONE_SIMU_TEST = input(':');
+    SW_ONE_SIMU_TEST = 1;
     if isempty(SW_ONE_SIMU_TEST)
         SW_ONE_SIMU_TEST      = 1;
     end
@@ -83,10 +85,11 @@ while 1
     end
 end
 
-disp('===================================================================')
-disp('CHOOSE WHETHER OR NOT TO SAVE THE TEST DATA.')
+% disp('===================================================================')
+% disp('CHOOSE WHETHER OR NOT TO SAVE THE TEST DATA.')
 while 1
-    SW_SAVE_DATA = input('Save the test result?\n   1(default, press ENTER): yes\n   0: no\n:');
+%     SW_SAVE_DATA = input('Save the test result?\n   1(default, press ENTER): yes\n   0: no\n:');
+    SW_SAVE_DATA = 0;
     if isempty(SW_SAVE_DATA)
         SW_SAVE_DATA        = 1;
     end
@@ -97,10 +100,11 @@ while 1
     end
 end
 
-disp('===================================================================')
-disp('ADAPTATION SCHEME.')
+% disp('===================================================================')
+% disp('ADAPTATION SCHEME.')
 while 1
-    SW_UNIFORM_ADAP = input('Uniform adaptation gain? (more conservative performance)\n   1(default, press ENTER): yes\n   0: no\n:');
+%     SW_UNIFORM_ADAP = input('Uniform adaptation gain? (more conservative performance)\n   1(default, press ENTER): yes\n   0: no\n:');
+    SW_UNIFORM_ADAP = 1;
     if isempty(SW_UNIFORM_ADAP)
         SW_UNIFORM_ADAP        = 1;
     end
